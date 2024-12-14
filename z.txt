@@ -1,0 +1,40 @@
+express routers are a way to organize your express application such that our primary app.js file does not become bloated
+const router = express.Router()//creates a new router object
+
+Web cookies are the small blocks of data created by a web server while a user is browsing a website and placed on the user's computer or other device by the user's web browser.
+
+
+Authentication is the process of verifying who someone is
+Authorization is the process of verifying what specific applications, files, and data a user has acsess too
+
+Storing passwords
+    -we never store passwords as it is, we store their hashed form.
+Hashing
+    - one way function, we can't get input from output
+    -for a diff input there is a diff output but of same length
+    -small changes in input should bring large changes in output
+    - for ex: modulo operator i.e. 3%3 is 0, and 6%3 is also zero same output but inp can't be predicted it can be 3,6,9,12 ...
+Salting
+    -technique is used to protect paswords stored in databases by adding a string of 32 or more characters and then hashing them.
+    - if password is abc, salt is "%?@" the salted form is abc%?@ and then hashing can be done.
+    - reverse table of lookup : which contains hashed forms and input of hash output.
+
+
+Passport is a library in node.js 
+
+For files instead of listing link
+npm i multer , enctype..see new.js in views and listing.js in routes
+
+cloudinary for cloud storage
+ and npm i cloudinary multer-storage-cloudinary for both multer and 
+ 
+npm install cloudinary
+ npm install multer-storage-cloudinary
+
+Mongo Atlas is a DataBase to deploy a multi-cloud database.
+
+
+for deployment we have ---
+- render
+-netlify
+-cyclic etc...
